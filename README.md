@@ -18,13 +18,20 @@ and train/test splitting are not applied.
 
 ### Download
 
-Command line:
+Clone the repo (fastest; the file lands in `IoT2026/lab2/data/`):
+
+```bash
+git clone --depth 1 https://github.com/arpangl/IoT2026.git
+```
+
+Or download the repo as a zip: https://github.com/arpangl/IoT2026/archive/refs/heads/main.zip
+
+Or fetch just the file / read it straight into pandas (works in Colab). This goes through
+`raw.githubusercontent.com`, which can be slow on some networks; use the clone if it crawls.
 
 ```bash
 wget https://github.com/arpangl/IoT2026/raw/main/lab2/data/ciciot2023_clean.parquet
 ```
-
-Or read it straight into pandas (works in Colab):
 
 ```python
 import pandas as pd
